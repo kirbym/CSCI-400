@@ -5,8 +5,8 @@
 	</head>
 	<body>
 	<?php 
-	echo '<table border>="1',"\n";
-	for($y = 0; $ < size; y++){
+	echo '<table border>=1',"\n";
+	for($y = 0; $y < size; y++){
 		echo "<tr>\n"
 		for($x = 0; $x < size; $x++){
 			echo "     <td style=\"background-color:#FF0000\>"
