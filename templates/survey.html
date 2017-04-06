@@ -1,0 +1,53 @@
+<html>
+<head>
+
+</head>
+<body>
+  <h1>Survey</h1>
+ 
+  <div style="float:right">
+    <table width="200" border="1">
+    {% for p in counts %}
+      <tr>
+        <td>{{p.0}}</td>
+        <td>{{p.1}}</td>
+	
+      </tr> 
+    {% endfor %}
+    </table>
+  </div>
+
+
+  <form method="get" action="{{ url_for('counter') }}">
+    <label for="name">Email</label>
+    <input type="text" name="email" value="{{name}}"><br/>
+
+    
+    Are You:<br>
+    <input type="radio" name="sex" value="male">Male<br>
+    <input type="radio" name="sex" value="female">      Female<br>
+
+    I like:<br>
+    <input type="radio" name="meme" value="dankmemes">Dankmemes<br>
+    <input type="radio" name="meme" value="cats">Cats<br>
+    <input type="radio" name="meme" value="dogs">Dogs<br>
+
+    What is your favorite?<br>
+	<input type="radio" name="lang" value="php">Php</option>
+	<input type="radio" name="lang" value="Java">Java</option>
+	<input type="radio" name="lang" value="Python">Python</option>
+	<input type="radio" name="lang" value="c#">C#</option>
+        <input type="radio" name="lang" value="c++">C++</option>
+
+
+<input type="submit">
+  </form>
+  <form>
+	Send Email:<br>
+	<input type="radio" name="yes" value="yes">Yes
+	<input type="radio" name="no" value="no">No
+   <input type ="submit">
+  </form>
+
+</body>
+</html>
