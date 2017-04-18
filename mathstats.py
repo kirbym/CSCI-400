@@ -10,7 +10,7 @@ data = [line.strip() for line in data]
 data = [int(line) for line in data]
 
 numfile.close()
-
+asdf
 #split data into chunks
 data1 = data[0:len(data)/4]
 data2 = data[len(data)/4:len(data)/2]
