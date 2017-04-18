@@ -5,6 +5,8 @@ from string import ascii_lowercase
 
 hashvalue = sys.argv[1] #get hash value to crack from command line
 
+print "Attacking ", hashvalue
+
 #generate list of lowercase letters and numerals
 letters = [ascii_lowercase[l] for l in range(len(ascii_lowercase))]
 numerals = [str(n) for n in range(10)]
